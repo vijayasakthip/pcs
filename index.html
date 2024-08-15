@@ -70,6 +70,12 @@
 .short-text.expanded {
     height: auto;
 }
+@media (max-width: 500px) {
+    #map {
+        width: 100%; /* Ensure the map takes full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
     </style>
 </head>
@@ -377,7 +383,7 @@
         <h1 class="mb-3" style="color:#252a8f">Our Footprints</h1>
         <div class="row">
         <div class="col-lg-9">
-          <img src="img/footprint.png" alt="" height="350" width="800">
+          <img id="map" src="img/footprint.png" alt="" height="350" width="800">
         </div>
         <div class="col-lg-3">
             <ul>
