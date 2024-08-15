@@ -76,6 +76,21 @@
         height: auto; /* Maintain aspect ratio */
     }
 }
+@media(max-width: 500px) {
+    .copyright .col-md-6 {
+        text-align: center; /* Center text in the footer for mobile devices */
+    }
+
+    .copyright .col-md-6:nth-child(2) {
+        margin-top: 1rem; /* Space between rows on mobile */
+    }
+
+    .footer-link {
+        display: block; /* Make each link block level */
+        width: 100%; /* Full width for each link */
+        margin-bottom: 0.5rem; /* Space between links */
+    }
+}
 
     </style>
 </head>
