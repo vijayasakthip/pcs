@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pheonix</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Style for the logo image */
+.logo {
+    height: auto;
+    max-height: 80px; /* Adjust this value as needed */
+    width: auto;
+    max-width: 100%;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 992px) {
+    .navbar-brand {
+        padding: 0.5rem 1rem;
+    }
+
+    .logo {
+        max-height: 100px; /* Increase the height for larger screens if needed */
+    }
+}
+        .short-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 120px; /* Adjust based on line height and number of lines */
+}
+
+.short-text.expanded {
+    max-height: none;
+    -webkit-line-clamp: unset;
+}
+.short-text {
+    height: 150px; /* Adjust as needed */
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.short-text.expanded {
+    height: auto;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-white sticky-top p-0">
+    <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5">
+        <!-- <img src="img/" alt="Logo" style="width:100px;height: 100px;"> -->
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="#" class="nav-item nav-link active" data-offset="0">Home</a>
+            <a href="#about-us" data-offset="-30" class="nav-item nav-link">About</a>
+            <a href="#services" data-offset="75" class="nav-item nav-link">Services</a>
+            <a href="#contact" data-offset="80" class="nav-item nav-link">Contact Us</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown"Integrated Shipping & Logistics Services></h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Phoneix cargo services PVT LTD</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">At Phoenix Cargo Service Pvt. Ltd., we are dedicated to providing exceptional cargo and logistics solutions tailored to meet the diverse needs of our clients. Established with a commitment to excellence, we offer a comprehensive range of services designed to ensure your cargo reaches its destination safely, efficiently, and on time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Integrated Shipping & Logistics Services</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Phoneix cargo services PVT LTD</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">At Phoenix Cargo Service Pvt. Ltd., we are dedicated to providing exceptional cargo and logistics solutions tailored to meet the diverse needs of our clients. Established with a commitment to excellence, we offer a comprehensive range of services designed to ensure your cargo reaches its destination safely, efficiently, and on time.</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+     <!-- About Start -->
+     <div  class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div id="about-us" class=" col-lg-12 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 style="color:#252a8f" class="mb-3">About Us</h1>
+                    <h1 class="mb-5">Welcome to Phoenix cargo services PVT LTD</h1>
+                    <p class="mb-5">
+                        Phoenix Cargo is incorporated in 2012 and has since enjoyed balanced
+                        growth ; creating a stable platform to provide a professional service in all
+                        aspects of domestic and International Freight forwarding and Logistics
+                        services.
+                        <br> <br>
+                        We are totally independent which we believe is one of our key strengths .
+                        This provide us with complete control over our operations , Suppliers and
+                        business partners and allow us to deliver a very personnel service to Clients .
+                        <br> <br>
+                        Phoenix as a company has its own genuine and long term customers in India
+                        and confidently seeded its values, vision & mission to its customers and
+                        team.
+                    </p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            
+                            <img width="90" height="90" src="https://img.icons8.com/pulsar-color/48/globe.png" alt="globe"/>
+                            <h5>Global Coverage</h5>
+                            <p class="m-0">Phoenix Cargo Services Pvt. Ltd. offers extensive global coverage, ensuring that your cargo reaches destinations around the world efficiently and reliably. Our network of trusted partners and strategic locations enables us to manage shipments with precision, no matter where they are headed.</p>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                    
+                            <img width="90" height="90" src="https://img.icons8.com/clouds/100/truck.png" alt="truck"/>
+                            <h5>On Time Delivery</h5>
+                            <p class="m-0">We pride ourselves on our commitment to on-time delivery. With our meticulous planning and streamlined processes, we ensure that your shipments are handled promptly and reach their destinations as scheduled, providing you with peace of mind and dependable service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Mission Card -->
+                    <div class="col-12">
+                        <h6 class="text-uppercase mb-3" id="mission"><img width="50" height="50" src="https://img.icons8.com/bubbles/50/telescope.png" alt="telescope"/>Our Vision</h6>
+                        <p class="card-text">To be a Customer Friendly company , Where customers have the desire to Trust, Support and confidently grow together</p>
+                    </div>
+                    <!-- Vision Card -->
+                    <div class="col-12">
+                         <h6 class="text-uppercase mb-3" id="vision"><img width="50" height="50" src="https://img.icons8.com/bubbles/50/define-location.png" alt="define-location"/>Our Mission</h6>
+                         <p class="card-text">Seed the People ; Pour the Values ; Grow the Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Service Start -->
+     <div id="services" class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5" style="color:#252a8f">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Service Item 1 -->
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/customs.png" alt="">
+                        </div>
+                        <h3 class="mb-3">Customs Brokerage</h3>
+                        <h4 class="mb-3">Efficient Customs Solutions</h4>
+                        <p class="short-text">
+                            Phoenix Cargo Services Pvt. Ltd. offers expert customs brokerage to simplify your international shipping. We manage all necessary documentation, ensure accurate tariff classifications, and handle duty payments, guaranteeing compliance with global regulations. Our dedicated team streamlines the customs clearance process, minimizing delays and facilitating smooth import and export operations. Trust us to navigate the complexities of customs with precision and efficiency.
+
+
+                        </p>
+                        <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/freightforward.png" alt="" >
+                        </div>
+                        <h3 class="mb-3">Freight Forwarding</h3>
+                        <h4 class="mb-3">Seamless Shipping Solutions</h4>
+                        <p class="short-text">
+                            Phoenix Cargo Services Pvt. Ltd. specializes in efficient freight forwarding for both domestic and international shipments. Our team expertly manages logistics, including route planning, cargo consolidation, and transportation, ensuring timely and cost-effective delivery. We coordinate with carriers and handle all aspects of your shipment, from pickup to final destination, providing you with a smooth and reliable shipping experience. Rely on us to streamline your freight operations with precision and care.
+
+                        </p>
+                        <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/transport.png" alt="" >
+                        </div>
+                        <h3 class="mb-3">Transportation</h3>
+                        <h4 class="mb-3">Reliable and Efficient Transport Services</h4>
+                        <p class="short-text">
+                            Phoenix Cargo Services Pvt. Ltd. provides dependable transportation solutions tailored to your needs. We manage the entire transportation process, ensuring safe and timely delivery of your cargo, whether for domestic or international routes. Our extensive network and fleet capabilities enable us to handle various types of shipments with flexibility and efficiency. Trust us to deliver your goods securely and on schedule, offering peace of mind and exceptional service every step of the way.
+
+
+                        </p>
+                        <a class="btn-slide mt-2 read-more" style="color:" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <!-- Service Item 4 -->
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/lift.png" alt="">
+                        </div>
+                        <h3 class="mb-3">Warehousing</h3>
+                        <h4 class="mb-3">Secure and Flexible Storage Solutions</h4>
+                        <p class="short-text">Phoenix Cargo Services Pvt. Ltd. offers state-of-the-art warehousing solutions designed to meet your storage needs. Our facilities provide secure, organized, and climate-controlled environments to safeguard your inventory. With scalable storage options and advanced inventory management systems, we ensure efficient handling and timely availability of your goods. Trust us to provide reliable warehousing services that streamline your supply chain and support your business operations.
+                        </p>
+                            <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+     <!-- Our customer Start -->
+     <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class=" text-center  mb-3">Our Customers</h4>
+                
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                </div>
+                   
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our customer End -->
+
+   <!-- value added seervices -->
+   <div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
+            <h4 class=" text-center mb-3">Value Added Services</h4>
+            <h6 class=" text-center  mb-3" >Govt Licensed Cargo Surveyors vide Group company ( MS LOGISTICS)</h6>
+            <h6 class=" text-center  mb-3">Owned & Leased Transport Fleets for Cargo LCL & FCL trucking</h6>
+                   
+            </div>
+          
+               
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- value added seervices -->
+
+
+  <!-- Contact Start -->
+<div id="contact" class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container contact-page py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
+                <h1 style="color:#252a8f">Get In Touch</h1>
+                <h1 class="mb-4">Contact Us</h1>
+                <div class="bg-light p-4 rounded shadow">
+                    <form action="" id="form" method="post">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="phone" class="form-label">Phone:</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone number" maxlength="10" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" id="submit" spellcheck="false">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card contactus">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Information</h5>
+                        <p class="card-text">
+                            <strong>Email:</strong> sameer@phoenixasia<br>
+                            <hr>
+                            <strong>Phone:</strong> +91 99523 38856<br>
+                            <hr>
+                            <strong>Address:</strong> OLD DOOR NO:96, Armenian Street, Mannadi, Chennai - 600 001.<br>
+                            <hr>
+                            <strong>Branch:</strong> Tirupur, Coimbatore, Thoothukudi, Cochin, Bangalore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+<!-- our footprints start -->
+<div class="container">
+    <div class="wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="mb-3" style="color:#252a8f">Our Footprints</h1>
+        <div class="row">
+        <div class="col-lg-9">
+          <img src="img/footprint.png" alt="" height="350" width="800">
+        </div>
+        <div class="col-lg-3">
+            <ul>
+                <h5>INDIA</h5>
+               
+                <li>Tirupur(O)</li>
+                <li>Tuticorin(O)</li>
+                <li>Chennai(O)</li>
+                <li>Cochin(A)</li>
+                <li>Mumbai(A)</li>
+                <li>Delhi(A)</li>
+            </ul>
+            <ul>
+                <h5>UAE</h5>
+             
+                <li>Dubai(A)</li>
+                <li>Bahrain(A)</li>
+            </ul>
+        </div>
+      
+        
+        
+        </div>
+    </div>
+</div>
+ <!-- our footprints end -->
+
+ <!-- quality policy start -->
+ <div class="container">
+    <div class="wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="mb-3">Quality Policy</h1>
+        <div class="row">
+        <div class="col-lg-12">
+          <p>We at phoneix cargo services (P) Limited are committed towards achieving higher levels of CUSTOMER SATISFACTION.</p>
+          <p>To ensure the customer commitments are met,we start our quality communication right from the Booking till Cargo delivery.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+ <!-- quality policy end -->
+   
+
+ <!-- Footer Start -->
+ <div class="container-fluid text-light  pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;background-color:#252a8f">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Address</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">About</h4>
+                <p class="mb-2">Phoenix Cargo Services Pvt. Ltd.</p>
+                <p class="mb-2">We pride ourselves on our strong, long-term relationships with customers across India. Our commitment to our values, vision, and mission is reflected in our dedicated team and the trust we've built with our clients.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Services</h4>
+                <p class="mb-2"><i class="fa fa-arrow-right  me-2"></i>Custom Brokerage</p>
+                <p class="mb-2"><i class="fa fa-arrow-right me-2"></i> Freight Forwarding</p>
+                <p class="mb-2"><i class="fa fa-arrow-right me-2"></i> Transportation</p>
+                <p class="mb-2"><i class="fa fa-arrow-right  me-2"></i> Warehousing</p>
+            </div>
+
+            
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Contact Us</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>OLD DOOR NO:96,
+                    <br>
+                    Armenian Street,Mannadi,
+                    <br>Chennai - 600 001.</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99523 38856</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>sameer@phoneix.asia</p>
+                Branch:<p class="mb-2">Tirupur,Coimbatore,Thoothukudi,
+                    Cochin,Bangalore</p>
+            </div>
+           
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Phoneix cargo services PVT LTD, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a class="footer-link me-5" href="#" style="color: white;">Privacy Policy</a>
+                    <a class="footer-link" href="#" style="color: white;">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Footer End -->
+
+    
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-lg-square up"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+    
+         document.getElementById("name").addEventListener("input", function(event) {
+        let nameInput = event.target.value;
+        // Allow only letters and spaces in the name field
+        event.target.value = nameInput.replace(/[^A-Za-z\s]/g, '');
+    });
+
+     // Restrict phone field to only digits
+     document.getElementById("phone").addEventListener("input", function(event) {
+        let phoneInput = event.target.value;
+        event.target.value = phoneInput.replace(/[^0-9]/g, '');  // Allow only digits
+    });
+
+          document.addEventListener("DOMContentLoaded", function() {
+    var readMoreLinks = document.querySelectorAll('.read-more');
+    
+    readMoreLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var currentlyExpanded = document.querySelector('.short-text.expanded');
+            var shortText = this.previousElementSibling;
+
+            // Collapse any currently expanded content
+            if (currentlyExpanded && currentlyExpanded !== shortText) {
+                currentlyExpanded.classList.remove('expanded');
+                currentlyExpanded.nextElementSibling.querySelector('span').textContent = 'Read More';
+            }
+
+            // Toggle the clicked content
+            if (shortText.classList.contains('expanded')) {
+                shortText.classList.remove('expanded');
+                this.querySelector('span').textContent = 'Read More';
+            } else {
+                shortText.classList.add('expanded');
+                this.querySelector('span').textContent = 'Read Less';
+            }
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    var navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"], a[href="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var targetId = this.getAttribute('href');
+            var target;
+
+            if (targetId === "#") {
+                // Special case for "Home" link
+                target = document.body; // Scroll to the top
+            } else {
+                target = document.querySelector(targetId);
+            }
+
+            if (target) {
+                var additionalOffset = parseInt(this.getAttribute('data-offset'), 10);
+                if (isNaN(additionalOffset)) {
+                    additionalOffset = 0; // Default offset value
+                }
+
+                // Calculate the scroll position with the navbar offset
+                var scrollToPosition = target.offsetTop - navbarHeight + additionalOffset;
+
+                window.scrollTo({
+                    top: scrollToPosition,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.error("Target not found:", targetId);
+            }
+        });
+    });
+
+    // Select all nav links
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Fixed scroll threshold values
+    const homeThreshold = 900;        // Highlight Home up to 700px from the top
+const aboutThreshold = 1800;      // Adjust these values as needed
+const servicesThreshold = 4000;   // Adjust these values as needed
+const contactThreshold = 7000;   // Adjust this value to the top of the contact section
+
+    // Function to highlight nav links based on scroll position
+    function onScroll() {
+        let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Highlight Home if scrolled up to homeThreshold
+        if (scrollPosition <= homeThreshold) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector('.navbar-nav .nav-link[href="#"]').classList.add('active');
+        } else if (scrollPosition > homeThreshold && scrollPosition <= aboutThreshold) {
+            // Highlight About if scrolled between homeThreshold and aboutThreshold
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector('.navbar-nav .nav-link[href="#about-us"]').classList.add('active');
+        } else if (scrollPosition > aboutThreshold && scrollPosition <= servicesThreshold) {
+            // Highlight Services if scrolled between aboutThreshold and servicesThreshold
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector('.navbar-nav .nav-link[href="#services"]').classList.add('active');
+        } else if (scrollPosition > servicesThreshold && scrollPosition <= contactThreshold) {
+            // Highlight Contact if scrolled between servicesThreshold and contactThreshold
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector('.navbar-nav .nav-link[href="#contact"]').classList.add('active');
+        } else {
+            // Optionally handle highlighting for sections beyond contactThreshold
+            navLinks.forEach(link => link.classList.remove('active'));
+        }
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Trigger on page load
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the button
+    const backToTopButton = document.querySelector('.up');
+
+    // Show or hide the button based on scroll position
+    function toggleBackToTopButton() {
+        if (window.pageYOffset > 200) { // Adjust the value based on when you want the button to appear
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    }
+
+    // Scroll to top smoothly when the button is clicked
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', toggleBackToTopButton);
+
+    // Initialize the button visibility on page load
+    toggleBackToTopButton();
+});
+
+
+</script>
+      
+</body>
+
+</html>
