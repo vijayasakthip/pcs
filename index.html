@@ -91,6 +91,15 @@
         margin-bottom: 0.5rem; /* Space between links */
     }
 }
+.contactus{
+    margin-top: 127.5px;
+}
+@media(max-width:500px){
+    .contactus{
+    margin-top: 45px;
+}
+}
+
 
     </style>
 </head>
@@ -135,10 +144,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown"Integrated Shipping & Logistics Services></h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Phoneix cargo services PVT LTD</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">At Phoenix Cargo Service Pvt. Ltd., we are dedicated to providing exceptional cargo and logistics solutions tailored to meet the diverse needs of our clients. Established with a commitment to excellence, we offer a comprehensive range of services designed to ensure your cargo reaches its destination safely, efficiently, and on time.
-                                </p>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"></h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2"></p>
                             </div>
                         </div>
                     </div>
@@ -150,9 +158,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Integrated Shipping & Logistics Services</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Phoneix cargo services PVT LTD</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">At Phoenix Cargo Service Pvt. Ltd., we are dedicated to providing exceptional cargo and logistics solutions tailored to meet the diverse needs of our clients. Established with a commitment to excellence, we offer a comprehensive range of services designed to ensure your cargo reaches its destination safely, efficiently, and on time.</p>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"></h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2"></p>
                              
                             </div>
                         </div>
@@ -218,7 +226,7 @@
         </div>
     </div>
     <!-- About End -->
-    
+
      <!-- Service Start -->
      <div id="services" class="container-xxl py-5">
         <div class="container py-5">
@@ -270,7 +278,7 @@
 
 
                         </p>
-                        <a class="btn-slide mt-2 read-more" style="color:" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2 read-more"  href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 <!-- Service Item 4 -->
@@ -291,7 +299,7 @@
     </div>
     <!-- Service End -->
 
-    <!-- Our customer Start -->
+     <!-- Our customer Start -->
      <div class="container-xxl py-2">
         <div class="container py-2">
             <div class="row g-5">
@@ -322,7 +330,7 @@
         </div>
     </div>
     <!-- Our customer End -->
-    
+
    <!-- value added seervices -->
    <div class="container-xxl py-2">
     <div class="container py-2">
@@ -346,8 +354,8 @@
 
 
   <!-- Contact Start -->
-<div id="contact" class="container-fluid overflow-hidden py-5 px-lg-0">
-    <div class="container contact-page py-5 px-lg-0">
+<div id="contact" class="container-fluid overflow-hidden py-3 px-lg-0">
+    <div class="container contact-page py-3 px-lg-0">
         <div class="row g-5 mx-lg-0">
             <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
                 <h1 style="color:#252a8f">Get In Touch</h1>
@@ -378,8 +386,8 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card contactus">
+            <div class="col-md-6 contactus">
+                <div class="card " >
                     <div class="card-body">
                         <h5 class="card-title">Contact Information</h5>
                         <p class="card-text">
@@ -433,7 +441,7 @@
 </div>
  <!-- our footprints end -->
 
-<!-- quality policy start -->
+ <!-- quality policy start -->
  <div class="container">
     <div class="wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="mb-3" style="color:#252a8f">Quality Policy</h1>
@@ -446,7 +454,8 @@
         </div>
         </div>
  <!-- quality policy end -->
-    
+   
+
  <!-- Footer Start -->
  <div class="container-fluid text-light  pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;background-color:#252a8f">
     <div class="container py-5">
@@ -609,9 +618,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fixed scroll threshold values
     const homeThreshold = 700;        // Highlight Home up to 700px from the top
-const aboutThreshold = 1600;      // Adjust these values as needed
-const servicesThreshold = 3500;   // Adjust these values as needed
-const contactThreshold = 7000;   // Adjust this value to the top of the contact section
+    const aboutThreshold = 1600;      // Adjust these values as needed
+    const servicesThreshold = 3500;   // Adjust these values as needed
+    const contactThreshold = 7000;   // Adjust this value to the top of the contact section
 
     // Function to highlight nav links based on scroll position
     function onScroll() {
