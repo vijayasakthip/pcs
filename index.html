@@ -70,6 +70,49 @@
 .short-text.expanded {
     height: auto;
 }
+@media (max-width: 2560px) {
+    #map {
+        width: 100%; /* Ensure the map takes full width on small screens */
+        height: 100%; /* Maintain aspect ratio */
+    }
+    #col3{
+        margin-top: 220px;
+    }
+  
+   
+}
+@media (max-width: 1440px) {
+    #map {
+        width: 100%; /* Ensure the map takes full width on small screens */
+        height: 100%; /* Maintain aspect ratio */
+    }
+    #col3{
+        margin-top: 200px;
+    }
+  
+   
+}
+@media (max-width: 1024px) {
+    #map {
+        width: 100%; /* Ensure the map takes full width on small screens */
+        height: 100%; /* Maintain aspect ratio */
+    }
+    #col3{
+        margin-top: 150px;
+    }
+  
+   
+}
+@media (max-width: 768px) {
+    #map {
+        width: 100%; /* Ensure the map takes full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    #col3{
+        margin-top:0px;
+     
+    }
+}
 @media (max-width: 500px) {
     #map {
         width: 100%; /* Ensure the map takes full width on small screens */
@@ -413,14 +456,14 @@
 <!-- Contact End -->
 
 <!-- our footprints start -->
-<div class="container">
+<div class="container" >
     <div class="wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="mb-3" style="color:#252a8f">Our Footprints</h1>
         <div class="row">
-        <div class="col-lg-9">
-          <img id="map" src="img/footprint.png" alt="" height="350" width="800">
+        <div class="col-lg-9" id="col9">
+          <img id="map" src="img/footprint.png" alt="" >
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="col3">
             <ul>
                 <h5>INDIA</h5>
                
