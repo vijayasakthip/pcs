@@ -161,6 +161,67 @@
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure the image is displayed correctly */
 }
+/* General Styling for the About Us Section */
+#about-us {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 2rem 0; /* Adjust vertical padding */
+}
+
+.container {
+    max-width: 1200px; /* Adjust the maximum width */
+    padding-left: 15px; /* Add padding on left */
+    padding-right: 15px; /* Add padding on right */
+}
+
+/* Ensure headings are bold and styled properly */
+h1, h2 {
+    font-weight: bold; /* Ensure headings are bold */
+}
+
+h1.text-primary {
+    color: #252a8f; /* Primary color for heading */
+}
+
+/* Justified text for paragraphs */
+.about-text p {
+    text-align: justify; /* Justify text alignment */
+    text-justify: inter-word; /* Ensure even spacing between words */
+}
+
+/* Styling for the Cards */
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Apply rounded corners */
+    overflow: hidden; /* Clip the content to fit the border radius */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow for depth */
+    text-align: center; /* Center text within the card */
+}
+
+/* Center the image within the card */
+.card img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Ensure the image does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure consistent spacing for card text */
+.card h5 {
+    margin-top: 1rem; /* Add margin to heading */
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust font size if needed */
+    color: #333; /* Ensure text color is readable */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 
     </style>
@@ -236,50 +297,54 @@
 
 <!-- About Start -->
 <div id="about-us" class="container-fluid overflow-hidden py-2 px-lg-0">
-    <div class="container about py-2 px-lg-0">
+    <div class="container py-2 px-lg-0">
         <div class="row justify-content-center">
             <div class="col-lg-10 col-md-12 text-center">
                 <div class="about-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 style="color:#252a8f" class="mb-3">About Us</h1>
-                    <h1 class="mb-5">Welcome to Phoenix Cargo Services PVT LTD</h1>
-                    <p class="mb-5">
-                        Phoenix Cargo is incorporated in 2012 and has since enjoyed balanced growth, creating a stable platform to provide a professional service in all aspects of domestic and International Freight forwarding and Logistics services.
+                    <h1 class="mb-3" style="color:#252a8f">About Us</h1>
+                    <h2 class="mb-5">Welcome to Phoenix Cargo Services PVT LTD</h2>
+                    <p class="mb-5" style="text-align: justify;">
+                        Phoenix Cargo was incorporated in 2012 and has since enjoyed balanced growth, creating a stable platform to provide professional services in all aspects of domestic and international freight forwarding and logistics.
                         <br><br>
-                        We are totally independent which we believe is one of our key strengths. This provides us with complete control over our operations, suppliers, and business partners, allowing us to deliver a very personalized service to clients.
+                        Our independence is a key strength, allowing us complete control over our operations, suppliers, and business partners. This enables us to deliver a highly personalized service to our clients.
                         <br><br>
-                        Phoenix as a company has its own genuine and long-term customers in India and confidently seeds its values, vision, and mission to its customers and team.
+                        Phoenix values long-term customer relationships in India and is committed to upholding its values, vision, and mission to both customers and team members.
                     </p>
                     <!-- Global Coverage and On Time Delivery -->
                     <div class="row g-4 mb-5 text-center">
                         <div class="col-sm-6 d-flex align-items-stretch wow fadeIn" data-wow-delay="0.5s">
-                            <div class="card h-100 w-100 p-3">
-                                <img width="90" height="90" src="https://img.icons8.com/pulsar-color/48/globe.png" alt="globe"/>
+                            <div class="card h-100 w-100 p-3 text-center border-0 rounded-lg shadow-sm">
+                                <img width="90" height="90" src="https://img.icons8.com/pulsar-color/48/globe.png" alt="globe" class="mb-3"/>
                                 <h5>Global Coverage</h5>
-                                <p class="m-0">Phoenix Cargo Services Pvt. Ltd. offers extensive global coverage, ensuring that your cargo reaches destinations around the world efficiently and reliably. Our network of trusted partners and strategic locations enables us to manage shipments with precision, no matter where they are headed.</p>
+                                <p class="m-0" style="text-align: justify;">Phoenix Cargo Services Pvt. Ltd. offers extensive global coverage, ensuring that your cargo reaches destinations around the world efficiently and reliably. Our network of trusted partners and strategic locations enables us to manage shipments with precision, no matter where they are headed.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 d-flex align-items-stretch wow fadeIn" data-wow-delay="0.7s">
-                            <div class="card h-100 w-100 p-3">
-                                <img width="90" height="90"  src="https://img.icons8.com/clouds/100/truck.png" alt="truck"/>
+                            <div class="card h-100 w-100 p-3 text-center border-0 rounded-lg shadow-sm">
+                                <img width="90" height="90" src="https://img.icons8.com/clouds/100/truck.png" alt="truck" class="mb-3"/>
                                 <h5>On Time Delivery</h5>
-                                <p class="m-0">We pride ourselves on our commitment to on-time delivery. With our meticulous planning and streamlined processes, we ensure that your shipments are handled promptly and reach their destinations as scheduled, providing you with peace of mind and dependable service.</p>
+                                <p class="m-0" style="text-align: justify;">We pride ourselves on our commitment to on-time delivery. With our meticulous planning and streamlined processes, we ensure that your shipments are handled promptly and reach their destinations as scheduled, providing you with peace of mind and dependable service.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Our Mission and Our Vision -->
                     <div class="row g-4 text-center">
                         <div class="col-sm-6 d-flex align-items-stretch">
-                            <div class="card h-100 w-100 p-3">
-                                <h6 class="text-uppercase mb-3" id="vision"><img width="60" height="60" src="https://img.icons8.com/bubbles/50/telescope.png" alt="telescope"/></h6>
+                            <div class="card h-100 w-100 p-3 text-center border-0 rounded-lg shadow-sm">
+                                <h6 class="text-uppercase mb-3">
+                                    <img width="60" height="60" src="https://img.icons8.com/bubbles/50/telescope.png" alt="telescope"/>
+                                </h6>
                                 <h5>Our Vision</h5>
-                                <p class="card-text">To be a customer-friendly company, where customers have the desire to trust, support, and confidently grow together.</p>
+                                <p class="card-text" style="text-align: justify;">To be a customer-friendly company, where customers have the desire to trust, support, and confidently grow together.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 d-flex align-items-stretch">
-                            <div class="card h-100 w-100 p-3">
-                                <h6 class="text-uppercase text-center mb-3" id="mission"><img width="60" height="60" src="https://img.icons8.com/bubbles/50/define-location.png" alt="define-location"/></h6>
+                            <div class="card h-100 w-100 p-3 text-center border-0 rounded-lg shadow-sm">
+                                <h6 class="text-uppercase mb-3">
+                                    <img width="60" height="60" src="https://img.icons8.com/bubbles/50/define-location.png" alt="define-location"/>
+                                </h6>
                                 <h5>Our Mission</h5>
-                                <p class="card-text">Seed the People; Pour the Values; Grow the Success.</p>
+                                <p class="card-text" style="text-align: justify;">Seed the People; Pour the Values; Grow the Success.</p>
                             </div>
                         </div>
                     </div>
@@ -291,77 +356,76 @@
 <!-- About End -->
 
 
-     <!-- Service Start -->
-     <div id="services" class="container-xxl py-3">
-        <div class="container py-3">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5" style="color:#252a8f">Explore Our Services</h1>
+
+
+    <!-- Service Start -->
+<div id="services" class="container-xxl py-3">
+    <div class="container py-3">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5" style="color:#252a8f">Explore Our Services</h1>
+        </div>
+        <div class="row g-4">
+            <!-- Service Item 1 -->
+            <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/customs.png" alt="">
+                    </div>
+                    <h3 class="mb-3" style="text-align: center;">Customs Brokerage</h3>
+                    <h4 class="mb-3" style="text-align: center;">Efficient Customs Solutions</h4>
+                    <p class="short-text" style="text-align: justify;">
+                        Phoenix Cargo Services Pvt. Ltd. offers expert customs brokerage to simplify your international shipping. We manage all necessary documentation, ensure accurate tariff classifications, and handle duty payments, guaranteeing compliance with global regulations. Our dedicated team streamlines the customs clearance process, minimizing delays and facilitating smooth import and export operations. Trust us to navigate the complexities of customs with precision and efficiency.
+                    </p>
+                    <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
             </div>
-            <div class="row g-4">
-                <!-- Service Item 1 -->
-                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/customs.png" alt="">
-                        </div>
-                        <h3 class="mb-3">Customs Brokerage</h3>
-                        <h4 class="mb-3">Efficient Customs Solutions</h4>
-                        <p class="short-text">
-                            Phoenix Cargo Services Pvt. Ltd. offers expert customs brokerage to simplify your international shipping. We manage all necessary documentation, ensure accurate tariff classifications, and handle duty payments, guaranteeing compliance with global regulations. Our dedicated team streamlines the customs clearance process, minimizing delays and facilitating smooth import and export operations. Trust us to navigate the complexities of customs with precision and efficiency.
-
-
-                        </p>
-                        <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+            <!-- Service Item 2 -->
+            <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/freightforward.png" alt="">
                     </div>
+                    <h3 class="mb-3" style="text-align: center;">Freight Forwarding</h3>
+                    <h4 class="mb-3" style="text-align: center;">Seamless Shipping Solutions</h4>
+                    <p class="short-text" style="text-align: justify;">
+                        Phoenix Cargo Services Pvt. Ltd. specializes in efficient freight forwarding for both domestic and international shipments. Our team expertly manages logistics, including route planning, cargo consolidation, and transportation, ensuring timely and cost-effective delivery. We coordinate with carriers and handle all aspects of your shipment, from pickup to final destination, providing you with a smooth and reliable shipping experience. Rely on us to streamline your freight operations with precision and care.
+                    </p>
+                    <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
-                <!-- Service Item 2 -->
-                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/freightforward.png" alt="" >
-                        </div>
-                        <h3 class="mb-3">Freight Forwarding</h3>
-                        <h4 class="mb-3">Seamless Shipping Solutions</h4>
-                        <p class="short-text">
-                            Phoenix Cargo Services Pvt. Ltd. specializes in efficient freight forwarding for both domestic and international shipments. Our team expertly manages logistics, including route planning, cargo consolidation, and transportation, ensuring timely and cost-effective delivery. We coordinate with carriers and handle all aspects of your shipment, from pickup to final destination, providing you with a smooth and reliable shipping experience. Rely on us to streamline your freight operations with precision and care.
-
-                        </p>
-                        <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <!-- Service Item 3 -->
-                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/transport.png" alt="" >
-                        </div>
-                        <h3 class="mb-3">Transportation</h3>
-                        <h4 class="mb-3">Reliable and Efficient Transport Services</h4>
-                        <p class="short-text">
-                            Phoenix Cargo Services Pvt. Ltd. provides dependable transportation solutions tailored to your needs. We manage the entire transportation process, ensuring safe and timely delivery of your cargo, whether for domestic or international routes. Our extensive network and fleet capabilities enable us to handle various types of shipments with flexibility and efficiency. Trust us to deliver your goods securely and on schedule, offering peace of mind and exceptional service every step of the way.
-
-
-                        </p>
-                        <a class="btn-slide mt-2 read-more"  href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <!-- Service Item 4 -->
-                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/lift.png" alt="">
-                        </div>
-                        <h3 class="mb-3">Warehousing</h3>
-                        <h4 class="mb-3">Secure and Flexible Storage Solutions</h4>
-                        <p class="short-text">Phoenix Cargo Services Pvt. Ltd. offers state-of-the-art warehousing solutions designed to meet your storage needs. Our facilities provide secure, organized, and climate-controlled environments to safeguard your inventory. With scalable storage options and advanced inventory management systems, we ensure efficient handling and timely availability of your goods. Trust us to provide reliable warehousing services that streamline your supply chain and support your business operations.
-                        </p>
-                            <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>              
             </div>
+            <!-- Service Item 3 -->
+            <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/transport.png" alt="">
+                    </div>
+                    <h3 class="mb-3"style="text-align: center;">Transportation</h3>
+                    <h4 class="mb-3"style="text-align: center;">Reliable and Efficient Transport Services</h4>
+                    <p class="short-text" style="text-align: justify;">
+                        Phoenix Cargo Services Pvt. Ltd. provides dependable transportation solutions tailored to your needs. We manage the entire transportation process, ensuring safe and timely delivery of your cargo, whether for domestic or international routes. Our extensive network and fleet capabilities enable us to handle various types of shipments with flexibility and efficiency. Trust us to deliver your goods securely and on schedule, offering peace of mind and exceptional service every step of the way.
+                    </p>
+                    <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <!-- Service Item 4 -->
+            <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/lift.png" alt="">
+                    </div>
+                    <h3 class="mb-3" style="text-align: center;">Warehousing</h3>
+                    <h4 class="mb-3" style="text-align: center;">Secure and Flexible Storage Solutions</h4>
+                    <p class="short-text" style="text-align: justify;">
+                        Phoenix Cargo Services Pvt. Ltd. offers state-of-the-art warehousing solutions designed to meet your storage needs. Our facilities provide secure, organized, and climate-controlled environments to safeguard your inventory. With scalable storage options and advanced inventory management systems, we ensure efficient handling and timely availability of your goods. Trust us to provide reliable warehousing services that streamline your supply chain and support your business operations.
+                    </p>
+                    <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>              
         </div>
     </div>
-    <!-- Service End -->
+</div>
+<!-- Service End -->
+
 
      <!-- Our customer Start -->
      <div class="container-xxl py-2">
@@ -399,19 +463,19 @@
    <div class="container-xxl py-2">
     <div class="container py-2">
         <div class="row g-5">
-            <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
-            <h4 class=" text-center mb-3" style="color:#252a8f">Value Added Services</h4>
-            <h6 class=" text-center  mb-3" >Govt Licensed Cargo Surveyors vide Group company ( MS LOGISTICS)</h6>
-            <h6 class=" text-center  mb-3">Owned & Leased Transport Fleets for Cargo LCL & FCL trucking</h6>
-                   
-            </div>
-          
-               
-                   
-                    
-                </div>
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="text-center mb-3" style="color:#252a8f;">Value Added Services</h4>
+                <h6 class="mb-3" style="text-align: justify;">
+                    Govt Licensed Cargo Surveyors vide Group company (MS LOGISTICS)
+                </h6>
+                <h6 class="mb-3" style="text-align: justify;">
+                    Owned & Leased Transport Fleets for Cargo LCL & FCL trucking
+                </h6>
             </div>
         </div>
+    </div>
+</div>
+
     </div>
 </div>
    <!-- value added seervices -->
@@ -494,30 +558,34 @@
 </div>
  <!-- our footprints end -->
 
- <!-- quality policy start -->
- <div class="container">
+ <!-- Quality Policy Start -->
+<div class="container">
     <div class="wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="mb-3" style="color:#252a8f">Quality Policy</h1>
         <div class="row">
-        <div class="col-lg-12">
-          <p>We at phoneix cargo services (P) Limited are committed towards achieving higher levels of CUSTOMER SATISFACTION.</p>
-          <p>To ensure the customer commitments are met,we start our quality communication right from the Booking till Cargo delivery.</p>
+            <div class="col-lg-12">
+                <p style="text-align: justify;">
+                    We at Phoenix Cargo Services (P) Limited are committed towards achieving higher levels of CUSTOMER SATISFACTION.
+                </p>
+                <p style="text-align: justify;">
+                    To ensure the customer commitments are met, we start our quality communication right from the Booking till Cargo delivery.
+                </p>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
- <!-- quality policy end -->
-   
+    </div>
+</div>
+<!-- Quality Policy End -->
 
- <!-- Footer Start -->
- <div class="container-fluid text-light  pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;background-color:#252a8f">
+
+<!-- Footer Start -->
+<div class="container-fluid text-light pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem; background-color:#252a8f;">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Address</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -527,31 +595,25 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">About</h4>
-                <p class="mb-2">Phoenix Cargo Services Pvt. Ltd.</p>
-                <p class="mb-2">We pride ourselves on our strong, long-term relationships with customers across India. Our commitment to our values, vision, and mission is reflected in our dedicated team and the trust we've built with our clients.</p>
+                <p class="mb-2" style="text-align: justify;">Phoenix Cargo Services Pvt. Ltd.</p>
+                <p class="mb-2" style="text-align: justify;">We pride ourselves on our strong, long-term relationships with customers across India. Our commitment to our values, vision, and mission is reflected in our dedicated team and the trust we've built with our clients.</p>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Services</h4>
-                <p class="mb-2"><i class="fa fa-arrow-right  me-2"></i>Custom Brokerage</p>
-                <p class="mb-2"><i class="fa fa-arrow-right me-2"></i> Freight Forwarding</p>
-                <p class="mb-2"><i class="fa fa-arrow-right me-2"></i> Transportation</p>
-                <p class="mb-2"><i class="fa fa-arrow-right  me-2"></i> Warehousing</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-arrow-right me-2"></i>Custom Brokerage</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-arrow-right me-2"></i>Freight Forwarding</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-arrow-right me-2"></i>Transportation</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-arrow-right me-2"></i>Warehousing</p>
             </div>
 
-            
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Contact Us</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>OLD DOOR NO:96,
-                    <br>
-                    Armenian Street,Mannadi,
-                    <br>Chennai - 600 001.</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99523 38856</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>sameer@phoneix.asia</p>
-                Branch:<p class="mb-2">Tirupur,Coimbatore,Thoothukudi,
-                    Cochin,Bangalore</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-map-marker-alt me-3"></i>OLD DOOR NO:96,<br>Armenian Street, Mannadi,<br>Chennai - 600 001.</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-phone-alt me-3"></i>+91 99523 38856</p>
+                <p class="mb-2" style="text-align: justify;"><i class="fa fa-envelope me-3"></i>sameer@phoneix.asia</p>
+                <p class="mb-2" style="text-align: justify;">Branch:<br>Tirupur, Coimbatore, Thoothukudi,<br>Cochin, Bangalore</p>
             </div>
-           
         </div>
     </div>
     <hr>
@@ -559,7 +621,7 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; Phoneix cargo services PVT LTD, All Rights Reserved.
+                    &copy; Phoenix Cargo Services PVT LTD, All Rights Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <a class="footer-link me-5" href="#" style="color: white;">Privacy Policy</a>
@@ -568,8 +630,6 @@
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 <!-- Footer End -->
 
