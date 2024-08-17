@@ -8,8 +8,7 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,7 +221,71 @@ h1.text-primary {
         padding-right: 15px;
     }
 }
+.logophoneix {
+        width: 110px; 
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    @media (max-width: 1024px) {
+        .logophoneix {
+            width: 110px;
+            height: 80px;
+            margin-top: -7px;
+            margin-right: 0px;
+        }
+        
+        #logoname {
+            margin-top: 10px; /* Adjust for better spacing */
+            margin-left: 0; /* Center the text */
+            text-align: center;
+          
+        }
+    }
 
+    @media (max-width: 768px) {
+        .logophoneix {
+            width: 110px;
+            height: 80px;
+            margin-top: -10px;
+            margin-right: 220px;
+        }
+        
+        #logoname {
+            margin-top: 10px; /* Adjust for better spacing */
+            margin-left: 0; /* Center the text */
+            text-align: center;
+            font-size: 0px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .logophoneix {
+            width: 100px; 
+            height: 70px;
+            margin-top: -7px;
+            margin-left: 90px;
+        }
+        
+        #logoname {
+            font-size: 16px; /* Adjust font size for smaller screens */
+        }
+        .navbar-brand{
+            width: 70%;
+        }
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    @media (max-width: 768px) {
+        .navbar-nav {
+            text-align: center;
+            width: 100%; /* Ensure the links take up full width */
+        }
+
+        .nav-item {
+            width: 100%; /* Ensure each nav-item takes up full width */
+        }
+    }
 
     </style>
 </head>
@@ -236,25 +299,27 @@ h1.text-primary {
     </div>
     <!-- Spinner End -->
 
-
-   <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-white sticky-top p-0">
-    <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5">
-        <img src="img/Phoneix logo.png" alt="Logo" style="width:110px;height: 80px;margin-bottom: 5px;">Phoneix Cargo services PVT LTD
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-white sticky-top p-0">
+    <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5 flex-column flex-lg-row">
+        <img src="img/phoneix logo.png" alt="Logo" class="logophoneix">
+        <h4 class="d-none d-md-block" id="logoname">Phoneix Cargo Services PVT LTD</h4>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="#" class="nav-item nav-link active" data-offset="0">Home</a>
-            <a href="#about-us" data-offset="-10" class="nav-item nav-link">About</a>
-            <a href="#services" data-offset="15" class="nav-item nav-link">Services</a>
-            <a href="#contact" data-offset="15" class="nav-item nav-link">Contact Us</a>
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#about-us" class="nav-item nav-link">About</a>
+            <a href="#services" class="nav-item nav-link">Services</a>
+            <a href="#contact" class="nav-item nav-link">Contact Us</a>
         </div>
     </div>
 </nav>
 <!-- Navbar End -->
+
+
 
 
 
@@ -346,7 +411,7 @@ h1.text-primary {
                                     <img width="60" height="60" src="https://img.icons8.com/bubbles/50/define-location.png" alt="define-location"/>
                                 </h6>
                                 <h5>Our Mission</h5>
-                                <p class="card-text" style="text-align: center;">Seed the People; Pour the Values; Grow the Success.</p>
+                                <p class="card-text" style="text-align: justify;">Seed the People; Pour the Values; Grow the Success.</p>
                             </div>
                         </div>
                     </div>
