@@ -209,8 +209,8 @@
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
+    background:#252a8f;
+    border-color: white;
 }
 
 .page-header {
