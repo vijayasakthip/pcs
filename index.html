@@ -302,8 +302,8 @@ h1.text-primary {
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-white sticky-top p-0">
     <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5 flex-column flex-lg-row">
-        <img src="img/Phoneix logo.png" alt="Logo" class="logophoneix">
-        <h4 class="d-none d-md-block" id="logoname">Phoneix Cargo Services PVT LTD</h4>
+        <img src="img/phoneix logo.png" alt="Logo" class="logophoneix">
+        <h4 class="d-none d-md-block" id="logoname">Phoneix Cargo Services Pvt Ltd</h4>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -411,7 +411,7 @@ h1.text-primary {
                                     <img width="60" height="60" src="https://img.icons8.com/bubbles/50/define-location.png" alt="define-location"/>
                                 </h6>
                                 <h5>Our Mission</h5>
-                                <p class="card-text" style="text-align: center;">Seed the People; Pour the Values; Grow the Success.</p>
+                                <p class="card-text" style="text-align: justify;">Seed the People; Pour the Values; Grow the Success.</p>
                             </div>
                         </div>
                     </div>
@@ -481,9 +481,9 @@ h1.text-primary {
                         <img class="img-fluid" src="img/lift.png" alt="">
                     </div>
                     <h3 class="mb-3" style="text-align: center;">Warehousing</h3>
-                    <h4 class="mb-3" style="text-align: center;">Secure and Flexible Storage Solutions</h4>
+                    <h4 class="mb-3" style="text-align: center;">Secure and Flexible Storage Solutions (FTWZ)</h4>
                     <p class="short-text" style="text-align: justify;">
-                        Phoenix Cargo Services Pvt. Ltd. offers state-of-the-art warehousing solutions designed to meet your storage needs. Our facilities provide secure, organized, and climate-controlled environments to safeguard your inventory. With scalable storage options and advanced inventory management systems, we ensure efficient handling and timely availability of your goods. Trust us to provide reliable warehousing services that streamline your supply chain and support your business operations.
+                        Phoenix Cargo Services Pvt. Ltd. offers state of the art warehousing solutions designed to meet your storage needs. Our facilities provide secure, organized, and climate-controlled environments to safeguard your inventory. With scalable storage options and advanced inventory management systems, we ensure efficient handling and timely availability of your goods. Trust us to provide reliable warehousing services that streamline your supply chain and support your business operations.
                     </p>
                     <a class="btn-slide mt-2 read-more" href="javascript:void(0);"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
@@ -549,6 +549,8 @@ h1.text-primary {
 
 
   <!-- Contact Start -->
+
+
 <div id="contact" class="container-fluid overflow-hidden py-3 px-lg-0">
     <div class="container contact-page py-3 px-lg-0">
         <div class="row g-5 mx-lg-0">
@@ -556,29 +558,35 @@ h1.text-primary {
                 <h1 style="color:#252a8f">Get In Touch</h1>
                 <h1 class="mb-4">Contact Us</h1>
                 <div class="p-4 rounded shadow" style="background-color: #a1dde2;border-radius: 7px;"">
-                    <form action="sendemail.php" id="form" method="post">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <label for="name" class="form-label">Name:</label>
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="phone" class="form-label">Phone:</label>
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone number" maxlength="10" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="message" class="form-label">Message:</label>
-                                <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" id="submit" spellcheck="false">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <form id="form" action="mail.php" method="post">
+    <div class="row g-3">
+        <div class="col-12">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="col-12">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone number" maxlength="10" required>
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Message:</label>
+            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12">
+            <input class="btn btn-primary w-100 py-3" type="submit" id="submit" name="submit" value="Send Message">
+            <?php if (!empty($message)) { ?>
+                <div class="success alert alert-success">
+                    <strong><?php echo $message; ?></strong>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</form>
+
                 </div>
             </div>
             <div class="col-md-6 contactuscolumn">
@@ -673,7 +681,7 @@ h1.text-primary {
                 <h4 class="text-light mb-4">Contact Us</h4>
                 <p class="mb-2" ><i class="fa fa-map-marker-alt me-3"></i>OLD DOOR NO:96,<br>Armenian Street, Mannadi,<br>Chennai - 600 001.</p>
                 <p class="mb-2" ><i class="fa fa-phone-alt me-3"></i>+91 99523 38856</p>
-                <p class="mb-2" ><i class="fa fa-envelope me-3"></i>sameer@phoneix.asia</p>
+                <p class="mb-2" ><i class="fa fa-envelope me-3"></i>sales@phoenix</p>
                 <p class="mb-2" >Branch: Tirupur, Coimbatore, Thoothukudi,Cochin, Bangalore</p>
             </div>
         </div>
