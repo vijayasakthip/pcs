@@ -301,7 +301,7 @@ h1.text-primary {
 
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-white sticky-top p-0">
-    <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5 flex-column flex-lg-row">
+    <a href="index.php class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-5 flex-column flex-lg-row">
         <img src="img/phoneix logo.png" alt="Logo" class="logophoneix">
         <h4 class="d-none d-md-block" id="logoname">Phoneix Cargo Services Pvt Ltd</h4>
     </a>
